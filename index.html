@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpinMaster Table Tennis Academy | Coaching & Club Membership</title>
+    <meta name="description"
+        content="Professional table tennis coaching, memberships, leagues, and training programs designed for players of all ages and skill levels.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;430&family=Poppins:wght@500;540;580&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 50" width="180" height="50" style="height: 40px; width: auto; max-width: 180px;">
+                    <g transform="translate(6, 4)">
+                        <rect x="13" y="24" width="5" height="13" rx="1.5" fill="#F4A261" />
+                        <circle cx="15.5" cy="15.5" r="11.5" fill="#E63946" />
+                        <circle cx="15.5" cy="15.5" r="10" fill="none" stroke="#F8FAFC" stroke-width="1" opacity="0.9" />
+                        <circle cx="27.5" cy="24" r="4.2" fill="#F4A261" stroke="#FFFFFF" stroke-width="0.8" />
+                        <path d="M 28 17 A 9 9 0 0 1 33 21" stroke="#F4A261" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.8" />
+                    </g>
+                    <text x="50" y="24" font-family="'Poppins', sans-serif" font-weight="700" font-size="14" fill="var(--text)" letter-spacing="0.5">SPINMASTER</text>
+                    <text x="50" y="38" font-family="'Poppins', sans-serif" font-weight="500" font-size="10" fill="#F4A261" letter-spacing="1">TT ACADEMY</text>
+                </svg>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html" class="active">Home 1</a>
+                <a href="home2.html">Home 2</a>
+                <a href="about.html">About Us</a>
+                <a href="plans.html">Memberships</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <button id="rtl-toggle" class="btn btn-outline"
+                    style="padding: 0.5rem 1rem; font-size: 0.8rem;">RTL</button>
+                <button id="theme-toggle" class="toggle-btn" title="Toggle Theme">
+                    <i data-lucide="moon"></i>
+                </button>
+                <a href="login.html" class="btn btn-primary">Login</a>
+                <button id="mobile-menu-btn" class="toggle-btn mobile-only" title="Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+        <nav class="mobile-nav-links">
+            <a href="index.html" class="active">Home 1</a>
+            <a href="home2.html">Home 2</a>
+            <a href="about.html">About Us</a>
+            <a href="plans.html">Memberships</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html" style="color: var(--primary);">Login</a>
+        </nav>
+    </div>
+
+    <!-- Section 1: Hero Section -->
+    <section class="hero">
+        <div class="hero-bg" style="background-image: url('https://t4.ftcdn.net/jpg/01/70/04/39/360_F_170043950_KUrZX3k2JS11RNaF22iPHcEbjH5dv7p5.jpg');"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Train Like a <br><span style="color: var(--accent);">Champion.</span></h1>
+                <p>Professional coaching programs, competitive leagues, and premium practice facilities for players of all skill levels.</p>
+                <div style="display: flex; gap: 1rem;">
+                    <a href="plans.html" class="btn btn-primary btn-lg">Join Club</a>
+                    <a href="plans.html" class="btn btn-outline btn-lg" style="color: white; border-color: white;">View Coaching Plans</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Featured Professional Coaching -->
+    <section class="featured-box">
+        <div class="container">
+            <div class="grid featured-grid reveal" style="align-items: center; gap: 4rem;">
+                <div>
+                    <span
+                        style="color: var(--primary); font-weight: 700; text-transform: uppercase; letter-spacing: 2px;">Signature Program</span>
+                    <h2 style="font-size: 3rem; margin-top: 1rem;">Advanced Spin & Tactics</h2>
+                    <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 2rem;">Take your game to a competitive level. This specialized program focuses on mastering heavy topspins, deceptive serves, footwork agility, and match strategy under the guidance of certified ITTF coaches.</p>
+                    <ul style="list-style: none; margin-bottom: 2rem;">
+                        <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;"><i
+                                data-lucide="check-circle" style="color: var(--accent);"></i> Video Analysis & Stroke Correction</li>
+                        <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;"><i
+                                data-lucide="check-circle" style="color: var(--accent);"></i> Match Play Simulation</li>
+                        <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;"><i
+                                data-lucide="check-circle" style="color: var(--accent);"></i> Multiball Training Drills</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-secondary">Book a Trial Session</a>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1511067007398-7e4b90cfa4bc?auto=format&fit=crop&q=80&w=800" alt="Table Tennis Training Session"
+                        style="width: 100%; border-radius: 32px; box-shadow: var(--shadow);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: How It Works -> Get Started -->
+    <section style="background-color: var(--surface);">
+        <div class="container">
+            <div style="text-align: center; max-width: 700px; margin: 0 auto 4rem;">
+                <h2 style="font-size: 2.5rem;">Three Steps to Excellence</h2>
+                <p style="color: var(--text-muted);">How to start your journey at SpinMaster Table Tennis Academy.</p>
+            </div>
+            <div class="grid grid-3 reveal">
+                <div class="card" style="text-align: center;">
+                    <div
+                        style="background: var(--primary); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: white;">
+                        <i data-lucide="user-plus" size="32"></i>
+                    </div>
+                    <h3>1. Choose a Program</h3>
+                    <p style="color: var(--text-muted);">Select from group training, weekend clinics, or premium individual coaching options.</p>
+                </div>
+                <div class="card" style="text-align: center;">
+                    <div
+                        style="background: var(--secondary); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: white;">
+                        <i data-lucide="trending-up" size="32"></i>
+                    </div>
+                    <h3>2. Skill Assessment</h3>
+                    <p style="color: var(--text-muted);">Get evaluated by our head coach to set your baseline and identify target areas for growth.</p>
+                </div>
+                <div class="card" style="text-align: center;">
+                    <div
+                        style="background: var(--accent); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: white;">
+                        <i data-lucide="award" size="32"></i>
+                    </div>
+                    <h3>3. Train & Win</h3>
+                    <p style="color: var(--text-muted);">Step onto the table, master advanced techniques, and test your skills in academy leagues.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Coaching Programs Preview -->
+    <section>
+        <div class="container">
+            <div class="section-header" style="margin-bottom: 3rem;">
+                <div>
+                    <h2>Our Coaching Programs</h2>
+                    <p style="color: var(--text-muted);">Programs tailored to every level of play, from beginners to tournament competitors.</p>
+                </div>
+                <a href="plans.html" class="btn btn-outline">View Coaching Plans</a>
+            </div>
+            <div class="grid grid-3 reveal">
+                <div class="card">
+                    <img src="https://www.dhisports.com/assets/images/canva-table-tennis-1-1396x930.jpg" class="card-img" alt="Beginner Coaching">
+                    <h3>Beginner Coaching</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Learn basic grip, proper stance, ball control, and fundamental counter strokes.</p>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
+                        <span style="font-weight: 700; font-size: 1.25rem;">$45<span style="font-size: 0.9rem; font-weight: 400; color: var(--text-muted);">/session</span></span>
+                        <a href="contact.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">Book Session</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://tabletennisdailyacademy.com/ttd-app-assets/images/ttd/Kamal%20Masterclass.jpg" class="card-img" alt="Junior Development">
+                    <h3>Junior Development</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Specialized youth development program fostering competitive spirit, agility, and motor skills.</p>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
+                        <span style="font-weight: 700; font-size: 1.25rem;">$120<span style="font-size: 0.9rem; font-weight: 400; color: var(--text-muted);">/month</span></span>
+                        <a href="contact.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">Book Session</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.shutterstock.com/image-photo/indian-happy-young-adult-gen-260nw-2630457207.jpg" class="card-img" alt="Advanced Training">
+                    <h3>Advanced Training</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Refine high-speed loops, brush loops, forehand/backhand transitions, and serve-return mechanics.</p>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
+                        <span style="font-weight: 700; font-size: 1.25rem;">$65<span style="font-size: 0.9rem; font-weight: 400; color: var(--text-muted);">/session</span></span>
+                        <a href="contact.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">Book Session</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Testimonials -->
+    <section style="background-color: var(--surface);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 2.5rem;">Success Stories</h2>
+            </div>
+            <div class="grid grid-3 reveal">
+                <div class="card">
+                    <div style="display: flex; gap: 0.5rem; color: #fbbf24; margin-bottom: 1rem;">
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                    </div>
+                    <p style="font-style: italic; margin-bottom: 1.5rem;">"The coaching staff at SpinMaster transformed my forehand loop. Within 6 months, my local rating went up by 300 points. High-performance tables and friendly members make game night amazing."</p>
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-top: auto;">
+                        <div style="width: 50px; height: 50px; border-radius: 50%; background: #ddd; overflow: hidden;">
+                            <img src="https://i.pravatar.cc/150?u=1" alt="User"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div>
+                            <p style="font-weight: 700; margin: 0;">Sarah Jenkins</p>
+                            <p style="font-size: 0.8rem; color: var(--text-muted); margin: 0;">Intermediate League Player</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div style="display: flex; gap: 0.5rem; color: #fbbf24; margin-bottom: 1rem;">
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                    </div>
+                    <p style="font-style: italic; margin-bottom: 1.5rem;">"Our son joined the Junior Development program. The coaches are incredible—they balance intensive footwork drills with fun, engaging activities. Highly recommend!"</p>
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-top: auto;">
+                        <div style="width: 50px; height: 50px; border-radius: 50%; background: #ddd; overflow: hidden;">
+                            <img src="https://i.pravatar.cc/150?u=2" alt="User"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div>
+                            <p style="font-weight: 700; margin: 0;">David Chen</p>
+                            <p style="font-size: 0.8rem; color: var(--text-muted); margin: 0;">Academy Parent</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div style="display: flex; gap: 0.5rem; color: #fbbf24; margin-bottom: 1rem;">
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                        <i data-lucide="star" fill="currentColor"></i>
+                    </div>
+                    <p style="font-style: italic; margin-bottom: 1.5rem;">"Weekend clinics are phenomenal. Coach Sam broke down my backhand push mechanics step-by-step. The community matches are competitive and highly organized."</p>
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-top: auto;">
+                        <div style="width: 50px; height: 50px; border-radius: 50%; background: #ddd; overflow: hidden;">
+                            <img src="https://i.pravatar.cc/150?u=3" alt="User"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div>
+                            <p style="font-weight: 700; margin: 0;">Alex Rivera</p>
+                            <p style="font-size: 0.8rem; color: var(--text-muted); margin: 0;">Tournament Competitor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Club Membership Plans -->
+    <section>
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 2.5rem;">Join the Academy</h2>
+                <p style="color: var(--text-muted);">Flexible membership packages designed for players of all commitment levels.</p>
+            </div>
+            <div class="grid grid-3 reveal">
+                <div class="card">
+                    <h3>Beginner Membership</h3>
+                    <p style="font-size: 2rem; font-weight: 580; margin: 1rem 0;">$39<span
+                            style="font-size: 1rem; color: var(--text-muted); font-weight: 400;">/mo</span></p>
+                    <ul style="list-style: none; margin-bottom: 2rem; flex-grow: 1;">
+                        <li style="margin-bottom: 0.5rem;"><i data-lucide="check" style="color: var(--accent);"></i> Weekly Practice Access</li>
+                        <li style="margin-bottom: 0.5rem;"><i data-lucide="check" style="color: var(--accent);"></i> Group Practice Sessions</li>
+                        <li style="margin-bottom: 0.5rem; opacity: 0.5;"><i data-lucide="x"
+                                style="color: var(--text-muted);"></i> League Play Entry</li>
+                        <li style="margin-bottom: 0.5rem; opacity: 0.5;"><i data-lucide="x"
+                                style="color: var(--text-muted);"></i> 1-on-1 Coaching Session</li>
+                    </ul>
+                    <a href="plans.html" class="btn btn-outline" style="width: 100%; margin-top: auto;">Select Plan</a>
+                </div>
+                <div class="card" style="border: 2px solid var(--primary); transform: scale(1.05); z-index: 1;">
+                    <div
+                        style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--primary); color: white; padding: 0.25rem 1rem; border-radius: 20px; font-size: 0.8rem; font-weight: 700;">
+                        MOST POPULAR</div>
+                    <h3>Intermediate Membership</h3>
+                    <p style="font-size: 2rem; font-weight: 580; margin: 1rem 0;">$59<span
+                            style="font-size: 1rem; color: var(--text-muted); font-weight: 400;">/mo</span></p>
+                    <ul style="list-style: none; margin-bottom: 2rem; flex-grow: 1;">
+                        <li style="margin-bottom: 0.5rem;"><i data-lucide="check" style="color: var(--accent);"></i> Unlimited Club Access</li>
+                        <li style="margin-bottom: 0.5rem;"><i data-lucide="check" style="color: var(--accent);"></i> League Play Participation</li>
+                        <li style="margin-bottom: 0.5rem;"><i data-lucide="check" style="color: var(--accent);"></i> Group Coaching Clinics</li>
+                        <li style="margin-bottom: 0.5rem; opacity: 0.5;"><i data-lucide="x"
+                                style="color: var(--text-muted);"></i> 1-on-1 Coaching Session</li>
+                    </ul>
+                    <a href="plans.html" class="btn btn-primary" style="width: 100%; margin-top: auto;">Select Plan</a>
+                </div>
+                <div class="card">
+                    <h3>Pro Membership</h3>
+                    <p style="font-size: 2rem; font-weight: 580; margin: 1rem 0;">$99<span
+                            style="font-size: 1rem; color: var(--text-muted); font-weight: 400;">/mo</span></p>
+                    <ul style="list-style: none; margin-bottom: 2rem; flex-grow: 1;">
+                        <li style="margin-bottom: 0.5rem;"><i data-lucide="check" style="color: var(--accent);"></i> Unlimited Training & Practice</li>
+                        <li style="margin-bottom: 0.5rem;"><i data-lucide="check" style="color: var(--accent);"></i> 1-on-1 Personal Coaching Session</li>
+                        <li style="margin-bottom: 0.5rem;"><i data-lucide="check" style="color: var(--accent);"></i> Tournament Entry Support</li>
+                        <li style="margin-bottom: 0.5rem;"><i data-lucide="check" style="color: var(--accent);"></i> Custom Paddle Tuning</li>
+                    </ul>
+                    <a href="plans.html" class="btn btn-outline" style="width: 100%; margin-top: auto;">Select Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <!-- Footer CTA -->
+            <div class="footer-cta reveal">
+                <div>
+                    <h2>Ready to Train Like a Champion?</h2>
+                    <p>Register online today and book your free skill assessment session!</p>
+                </div>
+                <a href="contact.html" class="btn"
+                    style="background: white; color: var(--primary); padding: 1rem 2rem; font-size: 1.1rem;">Book a Trial Session</a>
+            </div>
+
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
+                        <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 50" width="180" height="50" style="height: 40px; width: auto; max-width: 180px;">
+                            <g transform="translate(6, 4)">
+                                <rect x="13" y="24" width="5" height="13" rx="1.5" fill="#F4A261" />
+                                <circle cx="15.5" cy="15.5" r="11.5" fill="#E63946" />
+                                <circle cx="15.5" cy="15.5" r="10" fill="none" stroke="#F8FAFC" stroke-width="1" opacity="0.9" />
+                                <circle cx="27.5" cy="24" r="4.2" fill="#F4A261" stroke="#FFFFFF" stroke-width="0.8" />
+                                <path d="M 28 17 A 9 9 0 0 1 33 21" stroke="#F4A261" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.8" />
+                            </g>
+                            <text x="50" y="24" font-family="'Poppins', sans-serif" font-weight="700" font-size="14" fill="var(--text)" letter-spacing="0.5">SPINMASTER</text>
+                            <text x="50" y="38" font-family="'Poppins', sans-serif" font-weight="500" font-size="10" fill="#F4A261" letter-spacing="1">TT ACADEMY</text>
+                        </svg>
+                    </a>
+                    <p style="color: var(--text-muted);">Helping players of every age improve technique, confidence, and competitive performance through expert table tennis coaching.</p>
+                    <div style="display: flex; gap: 0.75rem; margin-top: 1.5rem;">
+                        <a href="#" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul style="list-style: none;">
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="home2.html">Home 2</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="plans.html">Memberships</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Programs</h4>
+                    <ul style="list-style: none;">
+                        <li><a href="plans.html">Beginner Coaching</a></li>
+                        <li><a href="plans.html">Junior Development</a></li>
+                        <li><a href="plans.html">Advanced Training</a></li>
+                        <li><a href="plans.html">Weekend Clinics</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Resources</h4>
+                    <ul style="list-style: none;">
+                        <li><a href="about.html">Club Facilities</a></li>
+                        <li><a href="home2.html">League Schedule</a></li>
+                        <li><a href="plans.html">Common FAQs</a></li>
+                        <li><a href="contact.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SpinMaster Table Tennis Academy. All rights reserved. | <a href="#" style="text-decoration: underline;">Terms of Service</a> | <a href="#" style="text-decoration: underline;">Privacy Policy</a></p>
+                <a href="#" class="back-to-top" title="Back to Top">
+                    <i data-lucide="arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Overlay -->
+    <div class="modal-overlay">
+        <div id="subscribe-modal" class="modal">
+            <i data-lucide="x" class="close-modal" onclick="closeModal()"></i>
+            <h2 style="text-align: center;">Get 15% Off!</h2>
+            <p style="text-align: center; color: var(--text-muted); margin-bottom: 2rem;">Subscribe to our newsletter
+                and get a discount on your first month's membership.</p>
+            <form>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" class="form-control" placeholder="Enter your email">
+                </div>
+                <button class="btn btn-primary" style="width: 100%;" type="button" onclick="closeModal()">Claim Offer</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

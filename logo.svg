@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 50" width="180" height="50">
+  <!-- Table Tennis Paddle & Ball Graphic -->
+  <g transform="translate(6, 4)">
+    <!-- Paddle handle -->
+    <rect x="13" y="24" width="5" height="13" rx="1.5" fill="#F4A261" />
+    <!-- Paddle blade rubber -->
+    <circle cx="15.5" cy="15.5" r="11.5" fill="#E63946" />
+    <circle cx="15.5" cy="15.5" r="10" fill="none" stroke="#F8FAFC" stroke-width="1" opacity="0.9" />
+    <!-- Ball -->
+    <circle cx="27.5" cy="24" r="4.2" fill="#F4A261" stroke="#FFFFFF" stroke-width="0.8" />
+    <!-- Motion line -->
+    <path d="M 28 17 A 9 9 0 0 1 33 21" stroke="#F4A261" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.8" />
+  </g>
+  
+  <!-- Brand Text -->
+  <text x="50" y="24" font-family="'Poppins', sans-serif" font-weight="700" font-size="14" fill="currentColor" letter-spacing="0.5">SPINMASTER</text>
+  <text x="50" y="38" font-family="'Poppins', sans-serif" font-weight="500" font-size="10" fill="#F4A261" letter-spacing="1">TT ACADEMY</text>
+</svg>

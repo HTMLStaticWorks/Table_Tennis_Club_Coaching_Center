@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Table Tennis Paddle & Ball Favicon -->
+  <rect x="14" y="20" width="4" height="9" rx="1.5" fill="#F4A261" />
+  <circle cx="16" cy="12" r="9.5" fill="#E63946" />
+  <circle cx="16" cy="12" r="8.2" fill="none" stroke="#FFFFFF" stroke-width="0.8" />
+  <circle cx="23" cy="20" r="3.5" fill="#F4A261" stroke="#FFFFFF" stroke-width="0.8" />
+</svg>
