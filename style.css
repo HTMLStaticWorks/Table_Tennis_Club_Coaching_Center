@@ -1212,7 +1212,7 @@ footer {
 }
 
 /* Contact page info centering on tablet/mobile */
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
     .contact-info-column {
         text-align: center !important;
         display: flex !important;
@@ -1235,6 +1235,12 @@ footer {
 
     .contact-social-wrapper div {
         justify-content: center !important;
+    }
+
+    .contact-grid .card {
+        max-width: 600px !important;
+        margin: 0 auto !important;
+        width: 100% !important;
     }
 }
 
@@ -1322,40 +1328,47 @@ footer {
 .champions-grid {
     display: grid !important;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+    justify-items: center !important;
 }
 
 @media (max-width: 768px) {
     .champions-grid {
         grid-template-columns: 1fr !important;
+        justify-items: center !important;
     }
 }
 
 /* Membership Page – Equal Card Size Fix at 1024px */
-.plans-pricing-grid {
+.plans-pricing-grid,
+.join-academy-grid {
     display: grid !important;
     grid-template-columns: repeat(3, 1fr) !important;
     align-items: stretch !important;
 }
 
-.plans-pricing-grid > * {
+.plans-pricing-grid > *,
+.join-academy-grid > * {
     max-width: 100% !important;
     flex: none !important;
 }
 
 @media (max-width: 1024px) {
-    .plans-pricing-grid {
+    .plans-pricing-grid,
+    .join-academy-grid {
         grid-template-columns: repeat(3, 1fr) !important;
         gap: 1.5rem !important;
     }
 
     /* Remove scale on featured card so all cards are the same visual size */
-    .plans-pricing-grid > .card[style*="scale"] {
+    .plans-pricing-grid > .card,
+    .join-academy-grid > .card {
         transform: none !important;
     }
 }
 
 @media (max-width: 768px) {
-    .plans-pricing-grid {
+    .plans-pricing-grid,
+    .join-academy-grid {
         grid-template-columns: 1fr !important;
     }
 }
@@ -1370,6 +1383,36 @@ footer {
     #gallery-grid > * {
         max-width: 100% !important;
         flex: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    #gallery-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+
+    .gallery-item {
+        padding: 0 !important;
+        overflow: hidden !important;
+    }
+
+    .gallery-item .card-img {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        border-radius: 0 !important;
+        width: 100% !important;
+        height: 200px !important;
+    }
+
+    .gallery-item h3 {
+        padding: 1.5rem 1.5rem 0.5rem !important;
+        margin: 0 !important;
+    }
+
+    .gallery-item p {
+        padding: 0 1.5rem 1.5rem !important;
+        margin: 0 !important;
     }
 }
 
