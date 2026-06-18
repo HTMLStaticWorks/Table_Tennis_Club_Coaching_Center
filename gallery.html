@@ -57,6 +57,9 @@
 
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="mobile-menu">
+        <button id="mobile-menu-close" class="close-menu-btn" title="Close Menu">
+            <i data-lucide="x"></i>
+        </button>
         <nav class="mobile-nav-links">
             <a href="index.html">Home 1</a>
             <a href="home2.html">Home 2</a>
@@ -65,7 +68,7 @@
             <a href="gallery.html" class="active">Gallery</a>
             <a href="blog.html">Blog</a>
             <a href="contact.html">Contact</a>
-            <a href="login.html" style="color: var(--primary);">Login</a>
+            <a href="login.html" class="btn btn-primary login-btn-mobile">Login</a>
         </nav>
     </div>
 
@@ -95,42 +98,42 @@
                 <!-- Item 1 -->
                 <div class="card gallery-item" data-category="coaching">
                     <img src="https://images.unsplash.com/photo-1511067007398-7e4b90cfa4bc?auto=format&fit=crop&q=80&w=800"
-                        class="card-img" alt="Coaching Session" style="height: 240px; object-fit: cover;">
+                        class="card-img" alt="Coaching Session" style="height: 160px; object-fit: cover;">
                     <h3 style="margin-top: 1rem;">1-on-1 Multiball Drill</h3>
                     <p style="color: var(--text-muted); font-size: 0.95rem;">Coach Elena demonstrating high-spin forehand loops.</p>
                 </div>
                 <!-- Item 2 -->
                 <div class="card gallery-item" data-category="matches">
                     <img src="https://storage.googleapis.com/stupaprodsguscentral/ettu-website-wordpress/2025/06/Franziska_GER_250601_2-scaled.jpg"
-                        class="card-img" alt="League Match" style="height: 240px; object-fit: cover;">
+                        class="card-img" alt="League Match" style="height: 160px; object-fit: cover;">
                     <h3 style="margin-top: 1rem;">Division 1 Finals</h3>
                     <p style="color: var(--text-muted); font-size: 0.95rem;">Intense counter-loop rally during the annual championship.</p>
                 </div>
                 <!-- Item 3 -->
                 <div class="card gallery-item" data-category="events">
                     <img src="https://t4.ftcdn.net/jpg/00/88/86/05/360_F_88860540_Ka1n4w4gjW1K8Sq2JWQHxggPDcm31K1C.jpg"
-                        class="card-img" alt="Club Event" style="height: 240px; object-fit: cover;">
+                        class="card-img" alt="Club Event" style="height: 160px; object-fit: cover;">
                     <h3 style="margin-top: 1rem;">Spring Open Ceremony</h3>
                     <p style="color: var(--text-muted); font-size: 0.95rem;">Gathering of players and supporters for the tournament kickoff.</p>
                 </div>
                 <!-- Item 4 -->
                 <div class="card gallery-item" data-category="training">
                     <img src="https://cdn.pixabay.com/photo/2016/02/18/23/26/table-tennis-1208378_1280.jpg"
-                        class="card-img" alt="Junior Training" style="height: 240px; object-fit: cover;">
+                        class="card-img" alt="Junior Training" style="height: 160px; object-fit: cover;">
                     <h3 style="margin-top: 1rem;">Junior Stance Practice</h3>
                     <p style="color: var(--text-muted); font-size: 0.95rem;">Fostering athletic movement and proper ready-stance habits.</p>
                 </div>
                 <!-- Item 5 -->
                 <div class="card gallery-item" data-category="matches">
                     <img src="https://cdn.pixabay.com/photo/2016/02/18/23/26/table-tennis-1208377_640.jpg"
-                        class="card-img" alt="Tournament Match" style="height: 240px; object-fit: cover;">
+                        class="card-img" alt="Tournament Match" style="height: 160px; object-fit: cover;">
                     <h3 style="margin-top: 1rem;">Under-18 Championship</h3>
                     <p style="color: var(--text-muted); font-size: 0.95rem;">Fast-paced backhand blocks during divisional playoffs.</p>
                 </div>
                 <!-- Item 6 -->
                 <div class="card gallery-item" data-category="coaching">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKRWGGLfhQcdwb3I7l3cEnupEx0MIFhOPxig&s"
-                        class="card-img" alt="Stroke Analysis" style="height: 240px; object-fit: cover;">
+                        class="card-img" alt="Stroke Analysis" style="height: 160px; object-fit: cover;">
                     <h3 style="margin-top: 1rem;">Tactical Video Analysis</h3>
                     <p style="color: var(--text-muted); font-size: 0.95rem;">Evaluating paddle contact angle and ball trajectory.</p>
                 </div>
@@ -163,22 +166,22 @@
                         }
                     </style>
                 </div>
-                <div>
-                    <span style="color: var(--secondary); font-weight: 700; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px;">OUR TRAINING HEADQUARTERS</span>
+                <div class="hq-content">
+                    <span class="hq-subheading" style="color: var(--secondary); font-weight: 700; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px;">OUR TRAINING HEADQUARTERS</span>
                     <h2 style="font-size: 2.5rem; margin: 1rem 0 1.5rem; line-height: 1.2;">Explore Our World-Class Facility</h2>
                     <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 2rem;">Take a digital walkthrough of the arena. Our specialized training facility is optimized for competitive match play and intensive multi-ball sessions, featuring premium ITTF tables and high-speed lighting rigs.</p>
                     
                     <div style="display: flex; flex-direction: column; gap: 1.25rem;">
                         <div style="display: flex; gap: 1rem; align-items: center;">
-                            <i data-lucide="check-circle-2" style="color: var(--secondary); flex-shrink: 0;"></i>
+                            <i data-lucide="check-circle-2" class="hq-check-icon" style="color: var(--secondary); flex-shrink: 0;"></i>
                             <span style="font-weight: 600; font-size: 1rem;">16 Professional ITTF-Approved Tables</span>
                         </div>
                         <div style="display: flex; gap: 1rem; align-items: center;">
-                            <i data-lucide="check-circle-2" style="color: var(--secondary); flex-shrink: 0;"></i>
+                            <i data-lucide="check-circle-2" class="hq-check-icon" style="color: var(--secondary); flex-shrink: 0;"></i>
                             <span style="font-weight: 600; font-size: 1rem;">Non-Slip Joint-Protection Flooring Mats</span>
                         </div>
                         <div style="display: flex; gap: 1rem; align-items: center;">
-                            <i data-lucide="check-circle-2" style="color: var(--secondary); flex-shrink: 0;"></i>
+                            <i data-lucide="check-circle-2" class="hq-check-icon" style="color: var(--secondary); flex-shrink: 0;"></i>
                             <span style="font-weight: 600; font-size: 1rem;">Shadow-Free High-Intensity Sports Lighting</span>
                         </div>
                     </div>
@@ -197,7 +200,7 @@
             </div>
             
             <!-- 4-Column Social Grid -->
-            <div class="reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem;">
+            <div class="reveal social-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem;">
                 <!-- Social Post 1 -->
                 <div style="position: relative; border-radius: 16px; overflow: hidden; aspect-ratio: 1; cursor: pointer;" class="social-card">
                     <img src="https://images.unsplash.com/photo-1511067007398-7e4b90cfa4bc?auto=format&fit=crop&q=80&w=500" alt="Instagram Post" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
@@ -256,12 +259,12 @@
                 <p style="color: var(--text-muted);">Celebrating the outstanding competitive achievements of our resident tournament athletes.</p>
             </div>
             
-            <div class="grid grid-3 reveal">
+            <div class="grid grid-3 champions-grid reveal">
                 <!-- Champion 1 -->
                 <div class="card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
                     <div style="height: 240px; overflow: hidden; position: relative;">
-                        <img src="https://www.shutterstock.com/image-photo/table-tennis-player-action-closeup-260nw-2457496797.jpg" alt="Marcus Vance" style="width: 100%; height: 100%; object-fit: cover;">
-                        <div style="position: absolute; bottom: 12px; left: 12px; background: var(--primary); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-weight: 700; font-size: 0.8rem; text-transform: uppercase;">STATE CHAMP</div>
+                        <img src="https://images.forbesindia.com/blog/wp-content/uploads//media/images/2023/Oct/img_220013_sharathkamalgettyimages-1242383709_bg.jpg" alt="Marcus Vance" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div style="position: absolute; top: 12px; left: 12px; background: var(--primary); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-weight: 700; font-size: 0.8rem; text-transform: uppercase;">STATE CHAMP</div>
                     </div>
                     <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
                         <h3 style="margin: 0 0 0.25rem; font-size: 1.3rem;">Marcus Vance</h3>
@@ -273,7 +276,7 @@
                 <div class="card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
                     <div style="height: 240px; overflow: hidden; position: relative;">
                         <img src="https://static.vecteezy.com/system/resources/thumbnails/073/470/411/small/professional-table-tennis-portrait-with-paddle-and-ball-on-dark-background-photo.jpg" alt="Sarah Jenkins" style="width: 100%; height: 100%; object-fit: cover;">
-                        <div style="position: absolute; bottom: 12px; left: 12px; background: var(--accent); color: var(--background); padding: 0.25rem 0.75rem; border-radius: 4px; font-weight: 700; font-size: 0.8rem; text-transform: uppercase;">NATIONAL SILVER</div>
+                        <div style="position: absolute; top: 12px; left: 12px; background: var(--accent); color: var(--background); padding: 0.25rem 0.75rem; border-radius: 4px; font-weight: 700; font-size: 0.8rem; text-transform: uppercase;">NATIONAL SILVER</div>
                     </div>
                     <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
                         <h3 style="margin: 0 0 0.25rem; font-size: 1.3rem;">Sarah Jenkins</h3>
@@ -285,7 +288,7 @@
                 <div class="card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
                     <div style="height: 240px; overflow: hidden; position: relative;">
                         <img src="https://static.vecteezy.com/system/resources/thumbnails/073/470/414/small/focused-table-tennis-serve-technique-with-red-paddle-indoors-photo.jpg" alt="Junior Falcons" style="width: 100%; height: 100%; object-fit: cover;">
-                        <div style="position: absolute; bottom: 12px; left: 12px; background: var(--secondary); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-weight: 700; font-size: 0.8rem; text-transform: uppercase;">DIVISIONAL CHAMPIONS</div>
+                        <div style="position: absolute; top: 12px; left: 12px; background: var(--secondary); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-weight: 700; font-size: 0.8rem; text-transform: uppercase;">DIVISIONAL CHAMPIONS</div>
                     </div>
                     <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
                         <h3 style="margin: 0 0 0.25rem; font-size: 1.3rem;">The Junior Falcons</h3>
@@ -300,6 +303,16 @@
     <!-- Footer -->
     <footer>
         <div class="container">
+            <!-- Footer CTA -->
+            <div class="footer-cta reveal">
+                <div>
+                    <h2>Ready to Train Like a Champion?</h2>
+                    <p>Register online today and book your free skill assessment session!</p>
+                </div>
+                <a href="contact.html" class="btn"
+                    style="background: white; color: var(--primary); padding: 1rem 2rem; font-size: 1.1rem;">Book a Trial Session</a>
+            </div>
+
             <div class="footer-grid">
                 <div>
                     <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">

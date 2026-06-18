@@ -59,6 +59,9 @@
 
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="mobile-menu">
+        <button id="mobile-menu-close" class="close-menu-btn" title="Close Menu">
+            <i data-lucide="x"></i>
+        </button>
         <nav class="mobile-nav-links">
             <a href="index.html" class="active">Home 1</a>
             <a href="home2.html">Home 2</a>
@@ -67,7 +70,7 @@
             <a href="gallery.html">Gallery</a>
             <a href="blog.html">Blog</a>
             <a href="contact.html">Contact</a>
-            <a href="login.html" style="color: var(--primary);">Login</a>
+            <a href="login.html" class="btn btn-primary login-btn-mobile">Login</a>
         </nav>
     </div>
 
@@ -78,7 +81,7 @@
             <div class="hero-content">
                 <h1>Train Like a <br><span style="color: var(--accent);">Champion.</span></h1>
                 <p>Professional coaching programs, competitive leagues, and premium practice facilities for players of all skill levels.</p>
-                <div style="display: flex; gap: 1rem;">
+                <div class="hero-buttons" style="display: flex; gap: 1rem;">
                     <a href="plans.html" class="btn btn-primary btn-lg">Join Club</a>
                     <a href="plans.html" class="btn btn-outline btn-lg" style="color: white; border-color: white;">View Coaching Plans</a>
                 </div>
@@ -160,8 +163,8 @@
                 <a href="plans.html" class="btn btn-outline">View Coaching Plans</a>
             </div>
             <div class="grid grid-3 reveal">
-                <div class="card">
-                    <img src="https://www.dhisports.com/assets/images/canva-table-tennis-1-1396x930.jpg" class="card-img" alt="Beginner Coaching">
+                <div class="card" style="display: flex; flex-direction: column; height: auto;">
+                    <img src="https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827?auto=format&fit=crop&q=80&w=800" class="card-img" alt="Beginner Coaching" style="height: 200px; object-fit: cover; width: 100%; border-radius: 16px; margin-bottom: 1.5rem;">
                     <h3>Beginner Coaching</h3>
                     <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Learn basic grip, proper stance, ball control, and fundamental counter strokes.</p>
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
@@ -169,8 +172,8 @@
                         <a href="contact.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">Book Session</a>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="https://tabletennisdailyacademy.com/ttd-app-assets/images/ttd/Kamal%20Masterclass.jpg" class="card-img" alt="Junior Development">
+                <div class="card" style="display: flex; flex-direction: column; height: auto;">
+                    <img src="https://cdn.pixabay.com/photo/2016/02/18/23/26/table-tennis-1208378_1280.jpg" class="card-img" alt="Junior Development" style="height: 200px; object-fit: cover; width: 100%; border-radius: 16px; margin-bottom: 1.5rem;">
                     <h3>Junior Development</h3>
                     <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Specialized youth development program fostering competitive spirit, agility, and motor skills.</p>
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
@@ -178,8 +181,8 @@
                         <a href="contact.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">Book Session</a>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="https://www.shutterstock.com/image-photo/indian-happy-young-adult-gen-260nw-2630457207.jpg" class="card-img" alt="Advanced Training">
+                <div class="card" style="display: flex; flex-direction: column; height: auto;">
+                    <img src="https://t4.ftcdn.net/jpg/00/88/86/05/360_F_88860569_5X7htfkaHAUWpnhbQaicxPRKMaNFVQgQ.jpg" class="card-img" alt="Advanced Training" style="height: 200px; object-fit: cover; width: 100%; border-radius: 16px; margin-bottom: 1.5rem;">
                     <h3>Advanced Training</h3>
                     <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Refine high-speed loops, brush loops, forehand/backhand transitions, and serve-return mechanics.</p>
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
@@ -198,7 +201,7 @@
                 <h2 style="font-size: 2.5rem;">Success Stories</h2>
             </div>
             <div class="grid grid-3 reveal">
-                <div class="card">
+                <div class="card" style="display: flex; flex-direction: column; height: auto;">
                     <div style="display: flex; gap: 0.5rem; color: #fbbf24; margin-bottom: 1rem;">
                         <i data-lucide="star" fill="currentColor"></i>
                         <i data-lucide="star" fill="currentColor"></i>
@@ -218,7 +221,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" style="display: flex; flex-direction: column; height: auto;">
                     <div style="display: flex; gap: 0.5rem; color: #fbbf24; margin-bottom: 1rem;">
                         <i data-lucide="star" fill="currentColor"></i>
                         <i data-lucide="star" fill="currentColor"></i>
@@ -238,7 +241,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" style="display: flex; flex-direction: column; height: auto;">
                     <div style="display: flex; gap: 0.5rem; color: #fbbf24; margin-bottom: 1rem;">
                         <i data-lucide="star" fill="currentColor"></i>
                         <i data-lucide="star" fill="currentColor"></i>

@@ -57,6 +57,9 @@
 
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="mobile-menu">
+        <button id="mobile-menu-close" class="close-menu-btn" title="Close Menu">
+            <i data-lucide="x"></i>
+        </button>
         <nav class="mobile-nav-links">
             <a href="index.html">Home 1</a>
             <a href="home2.html">Home 2</a>
@@ -65,7 +68,7 @@
             <a href="gallery.html">Gallery</a>
             <a href="blog.html">Blog</a>
             <a href="contact.html">Contact</a>
-            <a href="login.html" style="color: var(--primary);">Login</a>
+            <a href="login.html" class="btn btn-primary login-btn-mobile">Login</a>
         </nav>
     </div>
 
@@ -83,8 +86,8 @@
     <!-- Section 2: Core Content (Plans Grid) -->
     <section>
         <div class="container">
-            <div class="grid grid-3 reveal" style="gap: 2rem;">
-                <div class="card">
+            <div class="grid grid-3 plans-pricing-grid reveal" style="align-items: stretch; gap: 2.5rem;">
+                <div class="card" style="display: flex; flex-direction: column; height: auto;">
                     <h3>Beginner Membership</h3>
                     <p style="font-size: 2.5rem; font-weight: 580; margin: 1rem 0;">$39<span
                             style="font-size: 1rem; color: var(--text-muted); font-weight: 400;">/mo</span></p>
@@ -98,7 +101,7 @@
                     </ul>
                     <a href="contact.html" class="btn btn-outline" style="width: 100%; margin-top: auto;">Select Plan</a>
                 </div>
-                <div class="card" style="border: 2px solid var(--primary); transform: scale(1.05); z-index: 1;">
+                <div class="card" style="display: flex; flex-direction: column; height: auto; border: 2px solid var(--primary); transform: scale(1.05); z-index: 1;">
                     <div
                         style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--primary); color: white; padding: 0.25rem 1.25rem; border-radius: 20px; font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">
                         RECOMMENDED</div>
@@ -115,7 +118,7 @@
                     </ul>
                     <a href="contact.html" class="btn btn-primary" style="width: 100%; margin-top: auto;">Select Plan</a>
                 </div>
-                <div class="card">
+                <div class="card" style="display: flex; flex-direction: column; height: auto;">
                     <h3>Pro Membership</h3>
                     <p style="font-size: 2.5rem; font-weight: 580; margin: 1rem 0;">$99<span
                             style="font-size: 1rem; color: var(--text-muted); font-weight: 400;">/mo</span></p>
@@ -140,23 +143,31 @@
                 <h2 style="font-size: 2.5rem;">Frequently Asked Questions</h2>
                 <p style="color: var(--text-muted);">Everything you need to know about SpinMaster Academy.</p>
             </div>
-            <div class="reveal" style="display: flex; flex-direction: column; gap: 1.5rem;">
-                <div class="card" style="padding: 1.5rem 2rem;">
-                    <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">What equipment do I need to bring?</h3>
-                    <p style="color: var(--text-muted); margin: 0;">We provide professional paddles and practice balls for beginners during training sessions. We recommend bringing personal athletic wear and non-marking indoor court shoes. Advanced players are encouraged to bring their custom paddles.</p>
-                </div>
-                <div class="card" style="padding: 1.5rem 2rem;">
-                    <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Can I pause or modify my membership?</h3>
-                    <p style="color: var(--text-muted); margin: 0;">Yes, you can pause or upgrade/downgrade your active plan at any time. Simply notify our front desk at least 5 business days before your next billing cycle.</p>
-                </div>
-                <div class="card" style="padding: 1.5rem 2rem;">
-                    <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">How do I book 1-on-1 private coaching sessions?</h3>
-                    <p style="color: var(--text-muted); margin: 0;">Our Pro membership includes one private session per month. You can book additional slots with your preferred certified coach online, via the front desk, or by calling our support line.</p>
-                </div>
-                <div class="card" style="padding: 1.5rem 2rem;">
-                    <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Are there programs for junior players?</h3>
-                    <p style="color: var(--text-muted); margin: 0;">Yes! We have an intensive Junior Development Program for young athletes aged 6 to 16, which covers motor agility, tactical placement, and tournament preparation.</p>
-                </div>
+            <div class="reveal" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                <details class="faq-item">
+                    <summary>What equipment do I need to bring?</summary>
+                    <div class="faq-content">
+                        <p>We provide professional paddles and practice balls for beginners during training sessions. We recommend bringing personal athletic wear and non-marking indoor court shoes. Advanced players are encouraged to bring their custom paddles.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>Can I pause or modify my membership?</summary>
+                    <div class="faq-content">
+                        <p>Yes, you can pause or upgrade/downgrade your active plan at any time. Simply notify our front desk at least 5 business days before your next billing cycle.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>How do I book 1-on-1 private coaching sessions?</summary>
+                    <div class="faq-content">
+                        <p>Our Pro membership includes one private session per month. You can book additional slots with your preferred certified coach online, via the front desk, or by calling our support line.</p>
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>Are there programs for junior players?</summary>
+                    <div class="faq-content">
+                        <p>Yes! We have an intensive Junior Development Program for young athletes aged 6 to 16, which covers motor agility, tactical placement, and tournament preparation.</p>
+                    </div>
+                </details>
             </div>
         </div>
     </section>
@@ -170,7 +181,7 @@
             </div>
             <div class="grid grid-3 reveal">
                 <!-- Perk 1 -->
-                <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; height: auto;">
                     <div>
                         <div style="background: rgba(244, 162, 97, 0.1); color: var(--accent); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
                             <i data-lucide="lock" size="28"></i>
@@ -185,7 +196,7 @@
                 </div>
 
                 <!-- Perk 2 -->
-                <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; height: auto;">
                     <div>
                         <div style="background: rgba(230, 57, 70, 0.1); color: var(--primary); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
                             <i data-lucide="cpu" size="28"></i>
@@ -200,9 +211,9 @@
                 </div>
 
                 <!-- Perk 3 -->
-                <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+                <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; height: auto;">
                     <div>
-                        <div style="background: rgba(29, 53, 87, 0.1); color: var(--secondary); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                        <div class="guest-pass-icon" style="background: rgba(29, 53, 87, 0.1); color: var(--secondary); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
                             <i data-lucide="users" size="28"></i>
                         </div>
                         <h3 style="margin-bottom: 0.5rem; font-size: 1.4rem;">Guest Pass Bundle</h3>
@@ -221,7 +232,7 @@
     <section style="background-color: var(--surface);">
         <div class="container">
             <div class="grid grid-2 reveal" style="align-items: center; gap: 4rem;">
-                <div>
+                <div class="advantage-content">
                     <span style="color: var(--primary); font-weight: 700; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px;">THE SPINMASTER ADVANTAGE</span>
                     <h2 style="font-size: 2.5rem; margin: 1rem 0 1.5rem; line-height: 1.2;">Our USATT Rating Guarantee</h2>
                     <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 2rem;">We don't just instruct—we measure. If you join our Pro Training program, attend at least 3 classes per week, and fail to increase your USATT rating by at least 150 points within 6 months, we will provide the next month of private coaching completely free.</p>
@@ -298,6 +309,16 @@
     <!-- Footer -->
     <footer>
         <div class="container">
+            <!-- Footer CTA -->
+            <div class="footer-cta reveal">
+                <div>
+                    <h2>Ready to Train Like a Champion?</h2>
+                    <p>Register online today and book your free skill assessment session!</p>
+                </div>
+                <a href="contact.html" class="btn"
+                    style="background: white; color: var(--primary); padding: 1rem 2rem; font-size: 1.1rem;">Book a Trial Session</a>
+            </div>
+
             <div class="footer-grid">
                 <div>
                     <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">

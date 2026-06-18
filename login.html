@@ -15,8 +15,8 @@
     <!-- Theme & RTL Toggles -->
     <div style="position: absolute; top: 1.5rem; right: 1.5rem; display: flex; gap: 0.5rem; align-items: center; z-index: 2000;">
         <button id="rtl-toggle" class="btn btn-outline"
-            style="width: 40px !important; height: 40px !important; padding: 0 !important; font-size: 0.75rem !important; border-radius: 50% !important; border: 1px solid var(--border) !important; color: var(--text) !important; background: var(--surface) !important; display: flex !important; align-items: center !important; justify-content: center !important; cursor: pointer; min-width: auto !important; box-shadow: var(--shadow) !important;">RTL</button>
-        <button id="theme-toggle" class="toggle-btn" title="Toggle Theme" style="width: 40px !important; height: 40px !important; padding: 0 !important; border-radius: 50% !important; border: 1px solid var(--border) !important; color: var(--text) !important; background: var(--surface) !important; display: flex !important; align-items: center !important; justify-content: center !important; cursor: pointer; min-width: auto !important; box-shadow: var(--shadow) !important;">
+            style="padding: 0.5rem 1rem; font-size: 0.8rem;">RTL</button>
+        <button id="theme-toggle" class="toggle-btn" title="Toggle Theme">
             <i data-lucide="moon"></i>
         </button>
     </div>
@@ -59,12 +59,12 @@
                 </div>
             </div>
 
-            <div class="form-group" style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
-                <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <div class="form-group" style="display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: nowrap;">
+                <div style="display: flex; align-items: center; gap: 0.5rem; flex-shrink: 0;">
                     <input type="checkbox" id="remember">
-                    <label for="remember" style="margin-bottom: 0; font-size: 0.9rem; font-weight: 400;">Remember me</label>
+                    <label for="remember" style="margin-bottom: 0; font-size: 0.9rem; font-weight: 400; white-space: nowrap;">Remember me</label>
                 </div>
-                <a href="#" style="font-size: 0.85rem; color: var(--primary);">Forgot Password?</a>
+                <a href="#" style="font-size: 0.85rem; color: var(--primary); white-space: nowrap; flex-shrink: 0;">Forgot Password?</a>
             </div>
 
             <button type="submit" class="btn btn-primary" style="width: 100%; height: 56px; margin-top: 1rem;">Sign In</button>

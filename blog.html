@@ -57,6 +57,9 @@
 
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="mobile-menu">
+        <button id="mobile-menu-close" class="close-menu-btn" title="Close Menu">
+            <i data-lucide="x"></i>
+        </button>
         <nav class="mobile-nav-links">
             <a href="index.html">Home 1</a>
             <a href="home2.html">Home 2</a>
@@ -65,7 +68,7 @@
             <a href="gallery.html">Gallery</a>
             <a href="blog.html" class="active">Blog</a>
             <a href="contact.html">Contact</a>
-            <a href="login.html" style="color: var(--primary);">Login</a>
+            <a href="login.html" class="btn btn-primary login-btn-mobile">Login</a>
         </nav>
     </div>
 
@@ -86,7 +89,7 @@
             <div style="margin-bottom: 3rem;">
                 <h2 style="font-size: 2.5rem; text-align: center;">Featured Article</h2>
             </div>
-            <div class="grid grid-2 reveal" style="align-items: center; gap: 4rem; background: var(--surface); padding: 3rem; border-radius: 32px; box-shadow: var(--shadow);">
+            <div class="grid grid-2 reveal featured-article-card" style="align-items: center; gap: 4rem; background: var(--surface); padding: 3rem; border-radius: 32px; box-shadow: var(--shadow);">
                 <div>
                     <img src="https://images.unsplash.com/photo-1511067007398-7e4b90cfa4bc?auto=format&fit=crop&q=80&w=800"
                         alt="Mastering Forehand Loop" style="width: 100%; border-radius: 24px; object-fit: cover; height: 350px;">
@@ -95,7 +98,7 @@
                     <span style="background: var(--primary); color: white; padding: 0.25rem 1rem; border-radius: 20px; font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">TACTICAL GUIDE</span>
                     <h3 style="font-size: 2rem; margin: 1.5rem 0 1rem; line-height: 1.3;">Mastering the Forehand Loop: A Step-by-Step Breakdown</h3>
                     <p style="color: var(--text-muted); margin-bottom: 2rem; line-height: 1.6;">The forehand loop is the cornerstone of modern aggressive table tennis. In this extensive guide, Head Coach Marcus Thorne details stances, weight transition, arm angles, and paddle contact points to produce explosive topspin loops against heavy under-spin.</p>
-                    <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 1.5rem;">
+                    <div class="featured-article-footer" style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 1.5rem;">
                         <span style="font-size: 0.85rem; color: var(--text-muted);"><i data-lucide="calendar" size="14" style="vertical-align: middle; margin-right: 0.25rem;"></i> June 15, 2026</span>
                         <a href="contact.html" class="btn btn-secondary">Read Article</a>
                     </div>
@@ -111,7 +114,7 @@
                 <h2 style="font-size: 2.5rem;">Recent Training Articles</h2>
                 <p style="color: var(--text-muted);">Expand your tactical understanding and equipment knowledge.</p>
             </div>
-            <div class="grid grid-3 reveal">
+            <div class="grid grid-3 reveal recent-articles-grid">
                 <!-- Article 1 -->
                 <div class="card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
                     <div>
@@ -168,7 +171,7 @@
     <section>
         <div class="container">
             <div class="grid grid-2 reveal" style="align-items: center; gap: 4rem;">
-                <div>
+                <div class="visual-training-content">
                     <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Visual Stroke Training</h2>
                     <p style="color: var(--text-muted); margin-bottom: 2rem;">Sometimes watching a movement is worth a thousand words. Our certified coaches regularly record short, targeted slow-motion video drills covering lateral footwork, serve mechanics, and short-push angles.</p>
                     <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
@@ -182,12 +185,12 @@
                         </div>
                     </div>
                 </div>
-                <div style="position: relative; border-radius: 32px; overflow: hidden; box-shadow: var(--shadow);">
-                    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80&w=800"
-                        style="width: 100%; height: 350px; object-fit: cover;" alt="Video practice session">
-                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(29, 53, 87, 0.4); display: flex; align-items: center; justify-content: center; cursor: pointer;">
-                        <div style="background: white; color: var(--primary); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">
-                            <i data-lucide="play" size="32" style="fill: var(--primary); margin-left: 5px;"></i>
+                <div class="video-showcase-card" style="position: relative; border-radius: 32px; overflow: hidden; box-shadow: var(--shadow); cursor: pointer;">
+                    <img class="video-thumbnail" src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&q=80&w=800"
+                        style="width: 100%; height: 350px; object-fit: cover; transition: transform 0.5s ease;" alt="Video practice session">
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(29, 53, 87, 0.4); display: flex; align-items: center; justify-content: center;">
+                        <div class="play-btn-circle" style="background: white; color: var(--primary); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 20px rgba(0,0,0,0.2); transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;">
+                            <i data-lucide="play" size="32" style="fill: var(--primary); margin-left: 5px; transition: fill 0.3s ease, color 0.3s ease;"></i>
                         </div>
                     </div>
                 </div>
@@ -212,6 +215,16 @@
     <!-- Footer -->
     <footer>
         <div class="container">
+            <!-- Footer CTA -->
+            <div class="footer-cta reveal">
+                <div>
+                    <h2>Ready to Train Like a Champion?</h2>
+                    <p>Register online today and book your free skill assessment session!</p>
+                </div>
+                <a href="contact.html" class="btn"
+                    style="background: white; color: var(--primary); padding: 1rem 2rem; font-size: 1.1rem;">Book a Trial Session</a>
+            </div>
+
             <div class="footer-grid">
                 <div>
                     <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">

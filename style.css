@@ -296,14 +296,22 @@ header {
     box-shadow: 0 5px 15px rgba(230, 57, 70, 0.3);
 }
 
-.social-btn svg,
-.social-btn i {
+.social-btn svg {
     width: 20px !important;
     height: 20px !important;
     stroke: currentColor;
     stroke-width: 2;
     fill: none;
-    display: inline-block;
+}
+
+.social-btn i {
+    width: 20px !important;
+    height: 20px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    line-height: 20px !important;
+    text-align: center !important;
 }
 
 /* Hero Section */
@@ -506,7 +514,9 @@ header {
     }
 
     .featured-grid ul {
-        display: inline-block;
+        display: block;
+        width: fit-content;
+        margin: 0 auto 2rem auto;
         text-align: left;
     }
 
@@ -590,6 +600,14 @@ footer {
     font-size: 1.1rem;
 }
 
+.footer-cta .btn:hover,
+.responsive-cta .btn:hover {
+    background-color: var(--primary) !important;
+    color: white !important;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
 .faq-item {
     background: var(--bg);
     border: 1px solid var(--border);
@@ -646,6 +664,9 @@ footer {
 }
 
 .back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
     width: 50px;
     height: 50px;
     background: var(--primary);
@@ -657,11 +678,20 @@ footer {
     transition: var(--transition);
     cursor: pointer;
     box-shadow: var(--shadow);
+    z-index: 1000;
 }
 
 .back-to-top:hover {
     background: var(--primary-hover);
     transform: translateY(-5px);
+}
+
+.footer-bottom a {
+    transition: var(--transition);
+}
+
+.footer-bottom a:hover {
+    color: var(--primary) !important;
 }
 
 /* Animations */
@@ -782,13 +812,13 @@ footer {
 
 .mobile-menu {
     position: fixed;
-    top: 80px;
+    top: 0;
     left: 0;
     width: 100%;
-    height: calc(100vh - 80px);
+    height: 100vh;
     background: var(--surface);
-    z-index: 999;
-    padding: 2rem;
+    z-index: 2000;
+    padding: 4rem 2rem 2rem 2rem;
     box-shadow: var(--shadow);
     transform: translateX(-100%);
     opacity: 0;
@@ -800,6 +830,60 @@ footer {
 .mobile-menu.active {
     transform: translateX(0);
     opacity: 1;
+}
+
+.close-menu-btn {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background: none;
+    border: none;
+    color: var(--text);
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    z-index: 2010;
+}
+
+.close-menu-btn:hover {
+    background: var(--border);
+}
+
+.close-menu-btn svg,
+.close-menu-btn i {
+    width: 24px !important;
+    height: 24px !important;
+    color: var(--text) !important;
+}
+
+[dir="rtl"] .close-menu-btn {
+    right: auto;
+    left: 1.5rem;
+}
+
+.mobile-nav-links a.login-btn-mobile {
+    background-color: var(--primary) !important;
+    color: white !important;
+    border-bottom: none !important;
+    justify-content: center !important;
+    margin-top: 1.5rem !important;
+    border-radius: 12px !important;
+    padding: 0.75rem 1.5rem !important;
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+}
+
+.mobile-nav-links a.login-btn-mobile:hover {
+    background-color: var(--primary-hover) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 10px 15px -3px rgba(230, 57, 70, 0.4) !important;
 }
 
 .mobile-nav-links {
@@ -973,7 +1057,343 @@ footer {
         padding: 2rem;
     }
 
-    .hero-content div {
-        flex-wrap: wrap;
+    .hero-buttons {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 1rem !important;
+        width: 100% !important;
+    }
+
+    .hero-buttons a.btn {
+        width: 280px !important;
+        max-width: 100% !important;
+        justify-content: center !important;
+        padding: 0.75rem 1.5rem !important;
+        font-size: 1rem !important;
+    }
+
+    .section-header-flex {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        justify-content: center !important;
+    }
+
+    .section-header-text {
+        text-align: center !important;
+    }
+
+    .about-cta-buttons {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 1rem !important;
+    }
+
+    .about-cta-buttons a.btn {
+        width: 280px !important;
+        max-width: 100% !important;
+        justify-content: center !important;
+    }
+
+    .advantage-content {
+        text-align: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .advantage-content > div {
+        align-self: stretch !important;
+        text-align: left !important;
+    }
+
+    .advantage-content a.btn {
+        width: 280px !important;
+        max-width: 100% !important;
+        justify-content: center !important;
+    }
+
+    .hq-content {
+        text-align: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .hq-content > div {
+        align-self: center !important;
+        text-align: left !important;
     }
 }
+
+/* Gallery Social Grid responsive alignment */
+@media (max-width: 991px) {
+    .social-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .social-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .featured-article-card {
+        padding: 1.5rem !important;
+        gap: 2rem !important;
+    }
+
+    .featured-article-footer {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 1rem !important;
+    }
+
+    .featured-article-footer a.btn {
+        width: 280px !important;
+        max-width: 100% !important;
+        justify-content: center !important;
+        margin-bottom: 0.5rem !important;
+    }
+}
+
+/* Blog Recent Articles Grid responsive alignment */
+@media (max-width: 991px) {
+    .recent-articles-grid {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 2rem !important;
+    }
+
+    .recent-articles-grid > * {
+        flex: 0 1 calc(50% - 1rem) !important;
+        max-width: calc(50% - 1rem) !important;
+        width: calc(50% - 1rem) !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .recent-articles-grid > * {
+        flex: 1 1 100% !important;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+}
+
+/* Video Showcase Card Hover */
+.video-showcase-card:hover .video-thumbnail {
+    transform: scale(1.05);
+}
+
+.video-showcase-card:hover .play-btn-circle {
+    transform: scale(1.1);
+    background-color: var(--primary) !important;
+    color: white !important;
+}
+
+.video-showcase-card:hover .play-btn-circle svg {
+    fill: white !important;
+    color: white !important;
+}
+
+/* Responsive centering for Visual Stroke Training text on tablet/mobile */
+@media (max-width: 1024px) {
+    .visual-training-content {
+        text-align: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .visual-training-content > div {
+        justify-content: center !important;
+    }
+}
+
+/* Contact page info centering on tablet/mobile */
+@media (max-width: 991px) {
+    .contact-info-column {
+        text-align: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .contact-method-item {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 0.5rem !important;
+    }
+
+    .contact-social-wrapper {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .contact-social-wrapper div {
+        justify-content: center !important;
+    }
+}
+
+/* Auth card link hover effects */
+.auth-card a,
+.auth-card label a {
+    transition: color 0.25s ease, opacity 0.25s ease;
+}
+
+.auth-card a:hover,
+.auth-card label a:hover {
+    color: var(--primary-hover) !important;
+    opacity: 0.85;
+    text-decoration: underline !important;
+}
+
+/* Login page mobile: Remember me / Forgot Password row */
+@media (max-width: 480px) {
+    .auth-card .form-group[style*="space-between"] {
+        gap: 0.5rem !important;
+    }
+
+    .auth-card .form-group[style*="space-between"] label {
+        font-size: 0.78rem !important;
+        white-space: nowrap !important;
+    }
+
+    .auth-card .form-group[style*="space-between"] a {
+        font-size: 0.78rem !important;
+        white-space: nowrap !important;
+        flex-shrink: 0 !important;
+    }
+}
+
+/* Force brand logo SVG text direction to be LTR so brand name aligns properly in RTL mode */
+.logo-svg {
+    direction: ltr !important;
+}
+
+/* Arena stats alignment in RTL and contrast in Dark Mode */
+.arena-stat-number {
+    direction: ltr !important;
+    unicode-bidi: embed !important;
+    display: inline-block;
+}
+
+[dir="rtl"] .arena-stats {
+    text-align: right;
+}
+
+[data-theme="dark"] .arena-rating-number {
+    color: var(--accent) !important;
+}
+
+/* Contrast fixes for About Page in Dark Mode */
+[data-theme="dark"] .vision-icon {
+    color: var(--accent) !important;
+    background: rgba(244, 162, 97, 0.1) !important;
+}
+
+[data-theme="dark"] .elena-role {
+    color: var(--accent) !important;
+}
+
+[data-theme="dark"] .elena-img {
+    border-color: var(--accent) !important;
+}
+
+/* Contrast fix for Plans Page in Dark Mode */
+[data-theme="dark"] .guest-pass-icon {
+    color: var(--accent) !important;
+    background: rgba(244, 162, 97, 0.1) !important;
+}
+
+/* Contrast fixes for Gallery Page in Dark Mode */
+[data-theme="dark"] .hq-subheading {
+    color: var(--accent) !important;
+}
+
+[data-theme="dark"] .hq-check-icon {
+    color: var(--accent) !important;
+}
+
+/* Gallery Page Champions Grid Alignment Fix */
+.champions-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+}
+
+@media (max-width: 768px) {
+    .champions-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* Membership Page – Equal Card Size Fix at 1024px */
+.plans-pricing-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    align-items: stretch !important;
+}
+
+.plans-pricing-grid > * {
+    max-width: 100% !important;
+    flex: none !important;
+}
+
+@media (max-width: 1024px) {
+    .plans-pricing-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 1.5rem !important;
+    }
+
+    /* Remove scale on featured card so all cards are the same visual size */
+    .plans-pricing-grid > .card[style*="scale"] {
+        transform: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .plans-pricing-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* Gallery Page – Equal Card Size Fix at 1024px */
+@media (max-width: 1024px) {
+    #gallery-grid {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+
+    #gallery-grid > * {
+        max-width: 100% !important;
+        flex: none !important;
+    }
+}
+
+/* Contact Page – Map Responsive Fix */
+.map-wrapper {
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+    .map-wrapper {
+        padding: 0 1.5rem;
+        border-radius: 20px !important;
+        height: 350px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .map-wrapper {
+        padding: 0 1rem;
+        border-radius: 16px !important;
+        height: 280px !important;
+        margin-bottom: 2rem !important;
+    }
+}
+
+

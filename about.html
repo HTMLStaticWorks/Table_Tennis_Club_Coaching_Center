@@ -57,6 +57,9 @@
 
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="mobile-menu">
+        <button id="mobile-menu-close" class="close-menu-btn" title="Close Menu">
+            <i data-lucide="x"></i>
+        </button>
         <nav class="mobile-nav-links">
             <a href="index.html">Home 1</a>
             <a href="home2.html">Home 2</a>
@@ -65,7 +68,7 @@
             <a href="gallery.html">Gallery</a>
             <a href="blog.html">Blog</a>
             <a href="contact.html">Contact</a>
-            <a href="login.html" style="color: var(--primary);">Login</a>
+            <a href="login.html" class="btn btn-primary login-btn-mobile">Login</a>
         </nav>
     </div>
 
@@ -104,25 +107,25 @@
                 <h2 style="font-size: 2.5rem;">Core Ideals</h2>
             </div>
             <div class="grid grid-3 reveal">
-                <div class="card">
+                <div class="card" style="display: flex; flex-direction: column; text-align: center; height: auto;">
                     <div
-                        style="background: rgba(230, 57, 70, 0.1); width: 60px; height: 60px; border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; color: var(--primary);">
+                        style="background: rgba(230, 57, 70, 0.1); width: 60px; height: 60px; border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: var(--primary);">
                         <i data-lucide="target" size="32"></i>
                     </div>
                     <h3 style="min-height: 3.5rem;">Our Mission</h3>
                     <p style="color: var(--text-muted); flex-grow: 1;">To provide elite table tennis training that inspires discipline, enhances technical mechanics, and cultivates high competitive performance.</p>
                 </div>
-                <div class="card">
-                    <div
-                        style="background: rgba(29, 53, 87, 0.1); width: 60px; height: 60px; border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; color: var(--secondary);">
+                <div class="card" style="display: flex; flex-direction: column; text-align: center; height: auto;">
+                    <div class="vision-icon"
+                        style="background: rgba(29, 53, 87, 0.1); width: 60px; height: 60px; border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: var(--secondary);">
                         <i data-lucide="eye" size="32"></i>
                     </div>
                     <h3 style="min-height: 3.5rem;">Our Vision</h3>
                     <p style="color: var(--text-muted); flex-grow: 1;">To become the leading athletic nursery for Olympic-level table tennis talent and foster a vibrant local club community.</p>
                 </div>
-                <div class="card">
+                <div class="card" style="display: flex; flex-direction: column; text-align: center; height: auto;">
                     <div
-                        style="background: rgba(244, 162, 97, 0.1); width: 60px; height: 60px; border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; color: var(--accent);">
+                        style="background: rgba(244, 162, 97, 0.1); width: 60px; height: 60px; border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: var(--accent);">
                         <i data-lucide="brain" size="32"></i>
                     </div>
                     <h3 style="min-height: 3.5rem;">Coaching Philosophy</h3>
@@ -146,10 +149,10 @@
                     <p style="color: var(--primary); font-weight: 700;">Head Coach (ITTF Level 3)</p>
                 </div>
                 <div style="text-align: center;">
-                    <img src="https://i.pravatar.cc/300?u=b" alt="Coach Elena"
+                    <img src="https://i.pravatar.cc/300?u=b" alt="Coach Elena" class="elena-img"
                         style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin-bottom: 1.5rem; border: 5px solid var(--secondary);">
                     <h3>Elena Rodriguez</h3>
-                    <p style="color: var(--secondary); font-weight: 700;">Youth Director (ITTF Level 2)</p>
+                    <p class="elena-role" style="color: var(--secondary); font-weight: 700;">Youth Director (ITTF Level 2)</p>
                 </div>
                 <div style="text-align: center;">
                     <img src="https://i.pravatar.cc/300?u=c" alt="Coach Sam"
@@ -167,7 +170,7 @@
             <div class="reveal" style="text-align: center; max-width: 800px; margin: 0 auto;">
                 <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Experience Our Facilities</h2>
                 <p style="color: var(--text-muted); margin-bottom: 2rem;">Want to test your limits or looking to start a new hobby? Come down for our weekend open play session or register for a private training trial today.</p>
-                <div style="display: flex; gap: 1rem; justify-content: center;">
+                <div class="about-cta-buttons" style="display: flex; gap: 1rem; justify-content: center;">
                     <a href="contact.html" class="btn btn-primary">Book a Trial Session</a>
                     <a href="plans.html" class="btn btn-outline">View Membership Plans</a>
                 </div>
@@ -178,6 +181,16 @@
     <!-- Footer -->
     <footer>
         <div class="container">
+            <!-- Footer CTA -->
+            <div class="footer-cta reveal">
+                <div>
+                    <h2>Ready to Train Like a Champion?</h2>
+                    <p>Register online today and book your free skill assessment session!</p>
+                </div>
+                <a href="contact.html" class="btn"
+                    style="background: white; color: var(--primary); padding: 1rem 2rem; font-size: 1.1rem;">Book a Trial Session</a>
+            </div>
+
             <div class="footer-grid">
                 <div>
                     <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">

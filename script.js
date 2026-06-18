@@ -33,15 +33,17 @@ function toggleRTL() {
 function initMobileMenu() {
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
+    const mobileMenuClose = document.getElementById('mobile-menu-close');
 
     if (mobileMenuBtn && mobileMenu) {
         mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('active');
-            const icon = mobileMenuBtn.querySelector('i');
-            if (icon) {
-                icon.setAttribute('data-lucide', mobileMenu.classList.contains('active') ? 'x' : 'menu');
-                lucide.createIcons();
-            }
+            mobileMenu.classList.add('active');
+        });
+    }
+
+    if (mobileMenuClose && mobileMenu) {
+        mobileMenuClose.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
         });
     }
 }
