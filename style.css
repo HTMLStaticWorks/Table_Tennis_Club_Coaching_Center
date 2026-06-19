@@ -1213,6 +1213,13 @@ footer {
         max-width: 100% !important;
         height: 100% !important;
     }
+
+    .recent-articles-grid > .card:nth-child(3) {
+        grid-column: auto !important;
+        justify-self: stretch !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
 }
 
 /* Video Showcase Card Hover */
